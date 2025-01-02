@@ -170,9 +170,11 @@ while running:
             if missile_rect.colliderect(cactus_rect):
                 cactus_rect.x = random.randint(1280, 3000)
                 missile_rect.x=1280
+                attack = False
             if missile_rect.colliderect(bird_rect):
                 bird_rect.x = random.randint(1280, 3000)
                 missile_rect.x=1280
+                attack = False
         
         if gameover:
             gameover_show = font.render(f"Game Over",True, BLACK)
